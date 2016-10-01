@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" loaded="pageLoaded">
+  <Page.actionBar>
+    <ActionBar title="Nativescript App">
+      <ActionBar.actionItems>
+        <NavigationButton text="back" tap="prevPage" ios.position="right"  />
+        </ActionBar.actionItems>
+    </ActionBar>
+  </Page.actionBar>
+  <StackLayout>
+    <Label id ="myCounter" text = "{{ myCountP || 42}}" />
+    <Button text="Decrease" tap="decrease" />
+    <Button text="Reset" tap="reset" />
+  </StackLayout>
+</Page>

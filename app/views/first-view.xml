@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" loaded="pageLoaded">
+  <Page.actionBar>
+    <ActionBar title="Nativescript App">
+      <ActionBar.actionItems>      
+        </ActionBar.actionItems>
+    </ActionBar>
+  </Page.actionBar>
+  <StackLayout class="container">
+  <Image src="res://devfest2016" id="myImage" class="main_image" stretch ="none" />
+    <Button text="list" tap="tapListAction" />
+    <Button text="camera" tap="tapCameraAction" />
+    <Button text="net" tap="tapNetAction" />
+  </StackLayout>
+  
+</Page>

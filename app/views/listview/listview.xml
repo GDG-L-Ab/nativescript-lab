@@ -1,0 +1,17 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+  <Page.actionBar>
+    <ActionBar title="Nativescript App">
+        <ActionBar.actionItems>
+            <ActionItem text ="back" tap="tapBackAction" ios.position="right" />
+        </ActionBar.actionItems>
+    </ActionBar>
+  </Page.actionBar>
+  <ListView id ="mylist" items="{{myItems}}">
+    <ListView.itemTemplate>
+      <StackLayout>
+        <Label text="{{name || 'unknown name' }}" class="itemName" />
+        <Label text ="{{website || 'unknown website'}}" class="itemWebsite" />
+      </StackLayout>
+    </ListView.itemTemplate>
+  </ListView>
+</Page>

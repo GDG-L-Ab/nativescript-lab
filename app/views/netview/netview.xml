@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" loaded="pageLoaded">
+  <Page.actionBar>
+    <ActionBar title="Nativescript App">
+      <ActionBar.actionItems>
+        <NavigationButton text="back" tap="prevPage" ios.position="right"  />
+        </ActionBar.actionItems>
+    </ActionBar>
+  </Page.actionBar>
+  <StackLayout>
+    <Button text="Make request" tap="httpRequest" />
+     <Label id="logLabel" text="" textWrap="true" />        
+  </StackLayout>
+</Page>
