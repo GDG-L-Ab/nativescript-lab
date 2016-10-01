@@ -1,0 +1,11 @@
+.vscode/
+app/**/*.js
+!app/views/*.js
+!app/views/**/*.js
+!**/*.js
+hooks/
+lib/
+node_modules/
+
+tmp/
+typings/
